@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#262441"
+    android:layout_height="match_parent"
+    tools:context=".app.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/preview" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/relativeLayout"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:background="@drawable/list_item_background"
+                android:hint="@string/prompt_email"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="10dp" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:hint="Full name"
+                android:padding="10dp"
+                android:background="@drawable/list_item_background"
+                android:layout_marginTop="15dp"
+                android:inputType="textPersonName|textCapWords"
+                android:lines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="10dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:paddingTop="20dp"
+                android:paddingStart="16dp"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/list_item_background"
+                android:hint="@string/prompt_password"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp" />
+
+
+
+
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="27dp"
+            android:layout_marginTop="13dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTint="#fff"
+            android:layout_below="@id/linearLayout"
+            android:elevation="10dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/register"
+            android:paddingStart="40dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="40dp"
+            android:minWidth="200dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:onClick="loginOnClick"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</ScrollView>
